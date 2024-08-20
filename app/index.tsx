@@ -1,4 +1,5 @@
 import image from "@/constants/image";
+import { Link } from "expo-router";
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { Button, Divider } from "react-native-paper";
@@ -43,7 +44,7 @@ export default function Index() {
               contentStyle={{ height: "100%" }}
               onPress={() => console.log("Sign-in Button Pressed")}
             >
-              Sign-in
+              <Link href="/home">Sign-in</Link>
             </Button>
           </TouchableOpacity>
 
