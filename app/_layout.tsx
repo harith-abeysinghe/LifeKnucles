@@ -20,6 +20,9 @@ export default function RootLayout() {
     "Poppins-Regular": require("../assets/fonts/Poppins-Regular.ttf"),
     "Poppins-SemiBold": require("../assets/fonts/Poppins-SemiBold.ttf"),
     "Poppins-Thin": require("../assets/fonts/Poppins-Thin.ttf"),
+    "PermanentMarker-Regular": require("../assets/fonts/PermanentMarker-Regular.ttf"),
+    "Montserrat-Black": require("../assets/fonts/Montserrat-VariableFont_wght.ttf"),
+    "Montserrat-Italic": require("../assets/fonts/Montserrat-Italic-VariableFont_wght.ttf"),
   });
 
   useEffect(() => {
