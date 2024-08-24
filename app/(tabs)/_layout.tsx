@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BottomNavigation } from "react-native-paper";
-import { View, Text } from "react-native";
 import Home from "./home";
 import Community from "./community";
 import Info from "./info";
@@ -22,16 +21,16 @@ export default function TabLayout() {
       unfocusedIcon: "account-group-outline",
     },
     {
+      key: "leaderboard",
+      title: "Status",
+      focusedIcon: "message",
+      unfocusedIcon: "message-outline",
+    },
+    {
       key: "info",
       title: "Info",
       focusedIcon: "information",
       unfocusedIcon: "information-outline",
-    },
-    {
-      key: "leaderboard",
-      title: "Leader Board",
-      focusedIcon: "trophy",
-      unfocusedIcon: "trophy-outline",
     },
   ]);
 
@@ -49,12 +48,12 @@ export default function TabLayout() {
         onIndexChange={setIndex}
         renderScene={renderScene}
         barStyle={{
-          backgroundColor: "black",
+          backgroundColor: "#2E8B57",
           elevation: 1,
         }}
         sceneAnimationEnabled={true}
-        activeColor="#6200ee"
-        inactiveColor="#828282"
+        activeColor="white"
+        inactiveColor="black"
       />
     </>
   );
